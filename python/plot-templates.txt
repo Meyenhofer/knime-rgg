@@ -62,8 +62,15 @@ else:
 if gly == 'None':
 	gly = None
 
+if ori == 'vertical':
+	xvar = grp
+	yvar = amp
+else: 
+	xvar = amp
+	yvar = grp
+
 fi, ax = plt.subplots()
-sns.violinplot(x=grp, y=amp, data=df, hue=col, split=spl, inner=gly, orient=ori[0])
+sns.violinplot(x=xvar, y=yvar, data=df, hue=col, split=spl, inner=gly, orient=ori[0])
 
 if tit != 'None':
 	plt.title(tit)
