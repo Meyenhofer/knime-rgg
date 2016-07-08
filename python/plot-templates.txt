@@ -33,13 +33,13 @@ amp = <combobox label="Nominal variable" items="$$$NUM_ATTRIBUTES$$$" span="full
 
 # c) Graph title
 tit = <textfield label="Title" data-type="text" default-value="None" size="10" span="full"/>
-</group>
 
 # d) Orientation
 ori = <combobox items="vertical,horizontal" label="Orientation"/>;
 
 # e) Inner glyphs
 gly = <combobox items="None,box,point,quartile,stick" label="Inner glyphs"  default-value="None" span="full"/>
+</group>
 
 <!-- 3. Python script-->
 
